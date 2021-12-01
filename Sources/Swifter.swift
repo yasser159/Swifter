@@ -49,11 +49,21 @@ public enum TwitterURL {
     
     var url: URL {
         switch self {
+//v1 ____________________________________________________________________________________
         case .api:          return URL(string: "https://api.twitter.com/1.1/")!
         case .upload:       return URL(string: "https://upload.twitter.com/1.1/")!
         case .stream:       return URL(string: "https://stream.twitter.com/1.1/")!
         case .userStream:   return URL(string: "https://userstream.twitter.com/1.1/")!
         case .siteStream:   return URL(string: "https://sitestream.twitter.com/1.1/")!
+//v2 _ Yasser
+//        case .api:          return URL(string: "https://api.twitter.com/2/")!
+//        case .upload:       return URL(string: "https://upload.twitter.com/2/")!
+//        case .stream:       return URL(string: "https://stream.twitter.com/2/")!
+//        case .userStream:   return URL(string: "https://userstream.twitter.com/2/")!
+//        case .siteStream:   return URL(string: "https://sitestream.twitter.com/2/")!
+            
+//_______________________________________________________________________________________
+            
         case .oauth:        return URL(string: "https://api.twitter.com/")!
         case .publish:		return URL(string: "https://publish.twitter.com/")!
         }

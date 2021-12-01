@@ -76,8 +76,14 @@ public extension Swifter {
                   tweetMode: TweetMode = TweetMode.default,
                   success: SuccessHandler? = nil,
                   failure: FailureHandler? = nil) {
+        
+        
+        //v1
         let path = "statuses/show.json"
-
+        //v2 _ Yasser
+//        let path = "tweets"
+        
+        
         var parameters = [String: Any]()
         parameters["id"] = id
         parameters["trim_user"] ??= trimUser
@@ -409,8 +415,14 @@ public extension Swifter {
                       tweetMode: TweetMode = .default,
                       success: SuccessHandler? = nil,
                       failure: FailureHandler? = nil) {
+        
+        //v1
         let path = "statuses/lookup.json"
 
+        //v2 _ Yasser
+        //let path = "tweets"
+        
+        
         var parameters = [String: Any]()
         parameters["id"] = tweetIDs.joined(separator: ",")
 		parameters["trim_user"] ??= trimUser
